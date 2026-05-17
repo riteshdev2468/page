@@ -1,0 +1,107 @@
+/* Reset and global setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Set up the global background image so it flows continuously behind all sections */
+body {
+    background: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Individual full-width panels divided by solid black lines */
+.panel {
+    width: 100%;
+    min-height: 33.33vh; /* Splits screen roughly into equal horizontal parts */
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 4px solid #000000; /* Distinct dark border like the paper */
+    background-color: rgba(255, 255, 255, 0.4); /* Applies a light overlay so text is readable */
+}
+
+/* Titles */
+.main-title, .section-title {
+    color: #1a446c;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Navigation layout directly beneath header titles */
+.nav-links {
+    margin-bottom: 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Logo Box styling */
+.logo-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 4px;
+    display: inline-block;
+}
+
+.kdu-logo {
+    display: block;
+    width: 55px;
+    height: auto;
+}
+
+/* Exact replication of the rectangular white cards in sections 2 & 3 */
+.white-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 550px;
+    padding: 20px 30px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    margin-top: 5px;
+}
+
+/* Circular user picture inside the About card */
+.avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 1px solid #aaa;
+}
+
+/* Information text lines inside cards */
+.info-text {
+    font-size: 14px;
+    color: #111;
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+/* Slight padding adjustments for the contact-specific layout */
+.contact-card {
+    padding: 25px 30px;
+}
